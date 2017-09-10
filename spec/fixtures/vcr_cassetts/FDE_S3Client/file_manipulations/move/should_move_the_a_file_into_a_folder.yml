@@ -1,0 +1,210 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://fde-test-bucket.s3.eu-central-1.amazonaws.com/test_file.txt
+    body:
+      encoding: ASCII-8BIT
+      string: 'This is a Test File
+
+'
+    headers:
+      Content-Type:
+      - ''
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby3/3.3.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
+      Expect:
+      - 100-continue
+      Content-Md5:
+      - flDMc8JZVkIBkPdTimnkyQ==
+      Host:
+      - fde-test-bucket.s3.eu-central-1.amazonaws.com
+      X-Amz-Date:
+      - 20170910T141430Z
+      X-Amz-Content-Sha256:
+      - bbea122c8852dd8c4d1a7db94daf2a142870fcd6694e31c1fb44eede61b253ef
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAIX3HJK53KEOTMJOQ/20170910/eu-central-1/s3/aws4_request,
+        SignedHeaders=content-md5;expect;host;user-agent;x-amz-content-sha256;x-amz-date,
+        Signature=acf89bb1d2d49d9da06f446334d854a00c811a66e3a90c4b3d92b52bbbf135b2
+      Content-Length:
+      - '20'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - 48NvIoeR1ZSxeM/JiT9OHXjvI48wV7wWgOknJ5HYo/JYuKGKzbRFl29jICUmJqLEslwHQzUjb/k=
+      X-Amz-Request-Id:
+      - 77C7D62A2575EBFE
+      Date:
+      - Sun, 10 Sep 2017 14:14:32 GMT
+      Etag:
+      - '"7e50cc73c25956420190f7538a69e4c9"'
+      Content-Length:
+      - '0'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 10 Sep 2017 14:14:30 GMT
+- request:
+    method: put
+    uri: https://fde-test-bucket.s3.eu-central-1.amazonaws.com/test_file.txt
+    body:
+      encoding: ASCII-8BIT
+      string: 'This is a Test File
+
+'
+    headers:
+      Content-Type:
+      - ''
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby3/3.3.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
+      Expect:
+      - 100-continue
+      Content-Md5:
+      - flDMc8JZVkIBkPdTimnkyQ==
+      Host:
+      - fde-test-bucket.s3.eu-central-1.amazonaws.com
+      X-Amz-Date:
+      - 20170910T141430Z
+      X-Amz-Content-Sha256:
+      - bbea122c8852dd8c4d1a7db94daf2a142870fcd6694e31c1fb44eede61b253ef
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAIX3HJK53KEOTMJOQ/20170910/eu-central-1/s3/aws4_request,
+        SignedHeaders=content-md5;expect;host;user-agent;x-amz-content-sha256;x-amz-date,
+        Signature=acf89bb1d2d49d9da06f446334d854a00c811a66e3a90c4b3d92b52bbbf135b2
+      Content-Length:
+      - '20'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - 3wTeI3RJEJWC2usCA2fs6xZiMxgPXVPidBcwXgk+O+de/RgUMo6GH0pB7jbaGds6Oq19rFV+/mU=
+      X-Amz-Request-Id:
+      - 3E6B5DBFD767E509
+      Date:
+      - Sun, 10 Sep 2017 14:14:32 GMT
+      Etag:
+      - '"7e50cc73c25956420190f7538a69e4c9"'
+      Content-Length:
+      - '0'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 10 Sep 2017 14:14:30 GMT
+- request:
+    method: put
+    uri: https://fde-test-bucket.s3.eu-central-1.amazonaws.com/done/test_file.txt
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Content-Type:
+      - ''
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby3/3.3.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
+      X-Amz-Copy-Source:
+      - fde-test-bucket/test_file.txt
+      Host:
+      - fde-test-bucket.s3.eu-central-1.amazonaws.com
+      X-Amz-Date:
+      - 20170910T141430Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAIX3HJK53KEOTMJOQ/20170910/eu-central-1/s3/aws4_request,
+        SignedHeaders=host;user-agent;x-amz-content-sha256;x-amz-copy-source;x-amz-date,
+        Signature=ba92418923ca998d49b6cc09dd93f60ca0de432c95c9cc271e3cf6e2eebe9155
+      Content-Length:
+      - '0'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - UsS255BRB06PDsLsU2h/byPNhNHUoGEkFqLocOXyf8JI2djyhu5nuzRuH08zBc3BzPB9/Xlw4Ps=
+      X-Amz-Request-Id:
+      - 783079F60115D48D
+      Date:
+      - Sun, 10 Sep 2017 14:14:32 GMT
+      Content-Type:
+      - application/xml
+      Content-Length:
+      - '234'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <CopyObjectResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><LastModified>2017-09-10T14:14:32.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag></CopyObjectResult>
+    http_version: 
+  recorded_at: Sun, 10 Sep 2017 14:14:30 GMT
+- request:
+    method: delete
+    uri: https://fde-test-bucket.s3.eu-central-1.amazonaws.com/test_file.txt
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Content-Type:
+      - ''
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby3/3.3.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
+      Host:
+      - fde-test-bucket.s3.eu-central-1.amazonaws.com
+      X-Amz-Date:
+      - 20170910T141430Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAIX3HJK53KEOTMJOQ/20170910/eu-central-1/s3/aws4_request,
+        SignedHeaders=host;user-agent;x-amz-content-sha256;x-amz-date, Signature=069e266c2d8d59f79fedee0952265d08b4949926bbd69a7c04406f23ffb9995c
+      Content-Length:
+      - '0'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Amz-Id-2:
+      - pmyZQBf/zuSVfDJiszPSRHrLx4CzGYAUisOZ0ZQOVix5L9Hw6U03LOs/Rt1HnVnilHduaamboEo=
+      X-Amz-Request-Id:
+      - 30B97F6720E793CB
+      Date:
+      - Sun, 10 Sep 2017 14:14:32 GMT
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 10 Sep 2017 14:14:30 GMT
+recorded_with: VCR 3.0.3

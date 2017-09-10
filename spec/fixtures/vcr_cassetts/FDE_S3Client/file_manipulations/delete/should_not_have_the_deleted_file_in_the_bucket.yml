@@ -1,0 +1,154 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://fde-test-bucket.s3.eu-central-1.amazonaws.com/test_file.txt
+    body:
+      encoding: ASCII-8BIT
+      string: 'This is a Test File
+
+'
+    headers:
+      Content-Type:
+      - ''
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby3/3.3.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
+      Expect:
+      - 100-continue
+      Content-Md5:
+      - flDMc8JZVkIBkPdTimnkyQ==
+      Host:
+      - fde-test-bucket.s3.eu-central-1.amazonaws.com
+      X-Amz-Date:
+      - 20170910T141429Z
+      X-Amz-Content-Sha256:
+      - bbea122c8852dd8c4d1a7db94daf2a142870fcd6694e31c1fb44eede61b253ef
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAIX3HJK53KEOTMJOQ/20170910/eu-central-1/s3/aws4_request,
+        SignedHeaders=content-md5;expect;host;user-agent;x-amz-content-sha256;x-amz-date,
+        Signature=e18ad48e1fd2955cff125d2c2e59421e826ca832380b8bbb4afa7b95232f7b1f
+      Content-Length:
+      - '20'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - ny57qJHdqZCapCgUf9PnrAbA2AT3K3Ht7Zu/gGoRvPB6Jc9wSeB0peiVyFkhoW8Sl5UC1NgZWdk=
+      X-Amz-Request-Id:
+      - F6C0823C4C5FBA82
+      Date:
+      - Sun, 10 Sep 2017 14:14:31 GMT
+      Etag:
+      - '"7e50cc73c25956420190f7538a69e4c9"'
+      Content-Length:
+      - '0'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 10 Sep 2017 14:14:30 GMT
+- request:
+    method: delete
+    uri: https://fde-test-bucket.s3.eu-central-1.amazonaws.com/test_file.txt
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Content-Type:
+      - ''
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby3/3.3.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
+      Host:
+      - fde-test-bucket.s3.eu-central-1.amazonaws.com
+      X-Amz-Date:
+      - 20170910T141430Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAIX3HJK53KEOTMJOQ/20170910/eu-central-1/s3/aws4_request,
+        SignedHeaders=host;user-agent;x-amz-content-sha256;x-amz-date, Signature=069e266c2d8d59f79fedee0952265d08b4949926bbd69a7c04406f23ffb9995c
+      Content-Length:
+      - '0'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Amz-Id-2:
+      - ZbaFApQ43pLgv+/I0qGHw6zQN8fPMwEfYR+ob5kINHf6zk2PS0KCElUJOXK+J9RP3vhY5XFJ6CI=
+      X-Amz-Request-Id:
+      - 90065B93059BE4F1
+      Date:
+      - Sun, 10 Sep 2017 14:14:31 GMT
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 10 Sep 2017 14:14:30 GMT
+- request:
+    method: get
+    uri: https://fde-test-bucket.s3.eu-central-1.amazonaws.com/?encoding-type=url
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Content-Type:
+      - ''
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby3/3.3.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
+      Host:
+      - fde-test-bucket.s3.eu-central-1.amazonaws.com
+      X-Amz-Date:
+      - 20170910T141430Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAIX3HJK53KEOTMJOQ/20170910/eu-central-1/s3/aws4_request,
+        SignedHeaders=host;user-agent;x-amz-content-sha256;x-amz-date, Signature=923f4d3740053595a54f1c29b420932ca89818e701083914c77b8c49e99286df
+      Content-Length:
+      - '0'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - qmLKZf3XLOLgy5ZIBL2U7SLmzTQESwfA18eweKttfHsu62GXt6LlGI97sq49mSuDL7r/FTodDwc=
+      X-Amz-Request-Id:
+      - 4FA4D4EECC28D9BE
+      Date:
+      - Sun, 10 Sep 2017 14:14:32 GMT
+      X-Amz-Bucket-Region:
+      - eu-central-1
+      Content-Type:
+      - application/xml
+      Transfer-Encoding:
+      - chunked
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>fde-test-bucket</Name><Prefix></Prefix><Marker></Marker><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Contents><Key>done/test_file.txt</Key><LastModified>2017-09-10T14:14:00.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag><Size>20</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>done/test_file.txt/test_file.txt</Key><LastModified>2017-09-10T10:56:16.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag><Size>20</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>folder/new_test_file.txt</Key><LastModified>2017-09-10T14:14:01.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag><Size>20</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>folder/test_file.txt</Key><LastModified>2017-09-10T14:14:01.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag><Size>20</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>new.txt</Key><LastModified>2017-09-10T14:14:03.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag><Size>20</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>new_test_file.txt</Key><LastModified>2017-09-10T14:14:01.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag><Size>20</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents></ListBucketResult>
+    http_version: 
+  recorded_at: Sun, 10 Sep 2017 14:14:30 GMT
+recorded_with: VCR 3.0.3

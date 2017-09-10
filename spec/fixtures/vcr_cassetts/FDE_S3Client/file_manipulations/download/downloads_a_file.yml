@@ -1,0 +1,170 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://fde-test-bucket.s3.eu-central-1.amazonaws.com/test_file.txt
+    body:
+      encoding: ASCII-8BIT
+      string: 'This is a Test File
+
+'
+    headers:
+      Content-Type:
+      - ''
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby3/3.3.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
+      Expect:
+      - 100-continue
+      Content-Md5:
+      - flDMc8JZVkIBkPdTimnkyQ==
+      Host:
+      - fde-test-bucket.s3.eu-central-1.amazonaws.com
+      X-Amz-Date:
+      - 20170910T141429Z
+      X-Amz-Content-Sha256:
+      - bbea122c8852dd8c4d1a7db94daf2a142870fcd6694e31c1fb44eede61b253ef
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAIX3HJK53KEOTMJOQ/20170910/eu-central-1/s3/aws4_request,
+        SignedHeaders=content-md5;expect;host;user-agent;x-amz-content-sha256;x-amz-date,
+        Signature=e18ad48e1fd2955cff125d2c2e59421e826ca832380b8bbb4afa7b95232f7b1f
+      Content-Length:
+      - '20'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - Cn7ekjeMxaOWdyIHrO6R7orSzx20Gu1vLuhJpiq3mmL4a0OHKeLb9RgeHMzJKL7d8IQWDup7H34=
+      X-Amz-Request-Id:
+      - 75011C138D99AF34
+      Date:
+      - Sun, 10 Sep 2017 14:14:31 GMT
+      Etag:
+      - '"7e50cc73c25956420190f7538a69e4c9"'
+      Content-Length:
+      - '0'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 10 Sep 2017 14:14:29 GMT
+- request:
+    method: head
+    uri: https://fde-test-bucket.s3.eu-central-1.amazonaws.com/test_file.txt?partNumber=1
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Content-Type:
+      - ''
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby3/3.3.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
+      Host:
+      - fde-test-bucket.s3.eu-central-1.amazonaws.com
+      X-Amz-Date:
+      - 20170910T141429Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAIX3HJK53KEOTMJOQ/20170910/eu-central-1/s3/aws4_request,
+        SignedHeaders=host;user-agent;x-amz-content-sha256;x-amz-date, Signature=854894d8b71a851510cefe4e9095ae9cf37aa3478be10d8b3b3c5eb010fe0769
+      Content-Length:
+      - '0'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 206
+      message: Partial Content
+    headers:
+      X-Amz-Id-2:
+      - EZKjYk7CRDw/duwLH14Oc4jKegVhIILl2WaESf9wWsPDB5PwgV62GTlvDPjPvJBVG0YaTSPGPJE=
+      X-Amz-Request-Id:
+      - 7EA531E7E5ACDB6F
+      Date:
+      - Sun, 10 Sep 2017 14:14:31 GMT
+      Last-Modified:
+      - Sun, 10 Sep 2017 14:14:31 GMT
+      Etag:
+      - '"7e50cc73c25956420190f7538a69e4c9"'
+      Accept-Ranges:
+      - bytes
+      Content-Range:
+      - bytes 0-19/20
+      Content-Type:
+      - ''
+      Content-Length:
+      - '20'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 10 Sep 2017 14:14:29 GMT
+- request:
+    method: get
+    uri: https://fde-test-bucket.s3.eu-central-1.amazonaws.com/test_file.txt
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Content-Type:
+      - ''
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby3/3.3.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
+      Host:
+      - fde-test-bucket.s3.eu-central-1.amazonaws.com
+      X-Amz-Date:
+      - 20170910T141429Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAIX3HJK53KEOTMJOQ/20170910/eu-central-1/s3/aws4_request,
+        SignedHeaders=host;user-agent;x-amz-content-sha256;x-amz-date, Signature=d57003b9bba6c634582c902cea9c316fecb735617180648b379305faf0a69289
+      Content-Length:
+      - '0'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - 2v9QZGVbzfdJX9cOmYQa4GR68ft8uDyPzt0tYGzRCXiB0rWZMPg7ceZJaDMsJqgK1Th2EXZcquE=
+      X-Amz-Request-Id:
+      - D10AB11AFE68E252
+      Date:
+      - Sun, 10 Sep 2017 14:14:31 GMT
+      Last-Modified:
+      - Sun, 10 Sep 2017 14:14:31 GMT
+      Etag:
+      - '"7e50cc73c25956420190f7538a69e4c9"'
+      Accept-Ranges:
+      - bytes
+      Content-Type:
+      - ''
+      Content-Length:
+      - '20'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: 'This is a Test File
+
+'
+    http_version: 
+  recorded_at: Sun, 10 Sep 2017 14:14:29 GMT
+recorded_with: VCR 3.0.3
