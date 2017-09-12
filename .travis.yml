@@ -6,6 +6,7 @@ rvm:
 before_install: gem install bundler -v 1.15.4
 
 notifications:
+  email: false
   slack:
     on_success: always
     on_failure: always
