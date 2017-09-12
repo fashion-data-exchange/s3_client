@@ -4,3 +4,8 @@ rvm:
   - 2.4.0
 
 before_install: gem install bundler -v 1.15.4
+
+notifications:
+  slack:
+    on_success: always
+    on_failure: always
