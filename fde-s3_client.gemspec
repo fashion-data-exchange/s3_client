@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["f.langenegger@fadendaten.ch"]
 
   spec.summary       = %q{A simple S3 client for the fashion date exchange}
-  spec.description   = %q{This gems helps you to manage file on S3}
+  spec.description   = %q{This gems helps you to manage files on S3}
   spec.homepage      = "https://github.com/fashion-data-exchange/s3_client"
   spec.license       = "MIT"
 
