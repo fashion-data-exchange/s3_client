@@ -1,5 +1,5 @@
 require 'dotenv'
-Dotenv.load('spec/fixtures/test.env')
+Dotenv.load('.test.env')
 
 require 'bundler/setup'
 require 'vcr'

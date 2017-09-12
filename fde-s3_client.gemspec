@@ -30,16 +30,17 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency 'aws-sdk', '~> 3'
+  spec.add_runtime_dependency "aws-sdk", "~> 3"
+  spec.add_runtime_dependency "dotenv", "~> 2.2", ">= 2.2.1"
 
   spec.add_development_dependency "bundler", "~> 1.15"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "rdoc", "~> 5.1", ">= 5.1"
   spec.add_development_dependency "vcr", "~> 3.0.3", ">= 3.0.3"
-  spec.add_development_dependency "dotenv", "~> 2.2", ">= 2.2.1"
   spec.add_development_dependency 'webmock', '~> 3.0', '>= 3.0.1'
-  spec.add_development_dependency "pry"
-  spec.add_development_dependency "pry-remote"
-  spec.add_development_dependency "pry-nav"
+
+  spec.add_development_dependency "pry", "~> 0.10"
+  spec.add_development_dependency "pry-remote", "~> 0.1"
+  spec.add_development_dependency "pry-nav", "~> 0.2"
 end
