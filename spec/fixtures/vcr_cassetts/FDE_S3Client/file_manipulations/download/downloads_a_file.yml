@@ -14,7 +14,7 @@ http_interactions:
       Accept-Encoding:
       - ''
       User-Agent:
-      - aws-sdk-ruby3/3.3.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
+      - aws-sdk-ruby3/3.4.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
       Expect:
       - 100-continue
       Content-Md5:
@@ -22,13 +22,13 @@ http_interactions:
       Host:
       - fde-test-bucket.s3.eu-central-1.amazonaws.com
       X-Amz-Date:
-      - 20170910T141429Z
+      - 20170913T101940Z
       X-Amz-Content-Sha256:
       - bbea122c8852dd8c4d1a7db94daf2a142870fcd6694e31c1fb44eede61b253ef
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=AKIAIX3HJK53KEOTMJOQ/20170910/eu-central-1/s3/aws4_request,
+      - AWS4-HMAC-SHA256 Credential=AKIAIO3SBV4ZMINCQCRQ/20170913/eu-central-1/s3/aws4_request,
         SignedHeaders=content-md5;expect;host;user-agent;x-amz-content-sha256;x-amz-date,
-        Signature=e18ad48e1fd2955cff125d2c2e59421e826ca832380b8bbb4afa7b95232f7b1f
+        Signature=809c84069834e80171f2d5b697980f29909c32966709e960821547360a42586f
       Content-Length:
       - '20'
       Accept:
@@ -39,11 +39,11 @@ http_interactions:
       message: OK
     headers:
       X-Amz-Id-2:
-      - Cn7ekjeMxaOWdyIHrO6R7orSzx20Gu1vLuhJpiq3mmL4a0OHKeLb9RgeHMzJKL7d8IQWDup7H34=
+      - vxGiU8onhKbwpZs3O5xNciEBliEugLcMt4O9pDz+fE3ngj87vOl3e/RQTzYVEPgNRf0toGfw/Lc=
       X-Amz-Request-Id:
-      - 75011C138D99AF34
+      - A075AD47226D6BBC
       Date:
-      - Sun, 10 Sep 2017 14:14:31 GMT
+      - Wed, 13 Sep 2017 10:19:42 GMT
       Etag:
       - '"7e50cc73c25956420190f7538a69e4c9"'
       Content-Length:
@@ -54,7 +54,7 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sun, 10 Sep 2017 14:14:29 GMT
+  recorded_at: Wed, 13 Sep 2017 10:19:41 GMT
 - request:
     method: head
     uri: https://fde-test-bucket.s3.eu-central-1.amazonaws.com/test_file.txt?partNumber=1
@@ -67,16 +67,16 @@ http_interactions:
       Accept-Encoding:
       - ''
       User-Agent:
-      - aws-sdk-ruby3/3.3.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
+      - aws-sdk-ruby3/3.4.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
       Host:
       - fde-test-bucket.s3.eu-central-1.amazonaws.com
       X-Amz-Date:
-      - 20170910T141429Z
+      - 20170913T101941Z
       X-Amz-Content-Sha256:
       - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=AKIAIX3HJK53KEOTMJOQ/20170910/eu-central-1/s3/aws4_request,
-        SignedHeaders=host;user-agent;x-amz-content-sha256;x-amz-date, Signature=854894d8b71a851510cefe4e9095ae9cf37aa3478be10d8b3b3c5eb010fe0769
+      - AWS4-HMAC-SHA256 Credential=AKIAIO3SBV4ZMINCQCRQ/20170913/eu-central-1/s3/aws4_request,
+        SignedHeaders=host;user-agent;x-amz-content-sha256;x-amz-date, Signature=6c1a184a63dc3f22f194886f5f7632c62c39accb35323299066caa05f961d0cc
       Content-Length:
       - '0'
       Accept:
@@ -87,13 +87,13 @@ http_interactions:
       message: Partial Content
     headers:
       X-Amz-Id-2:
-      - EZKjYk7CRDw/duwLH14Oc4jKegVhIILl2WaESf9wWsPDB5PwgV62GTlvDPjPvJBVG0YaTSPGPJE=
+      - "+Hn7HsjJS6fBNjAat1RLDKOLJ/coPDlo1VsGA8fnfPglg7ZdXBSVEgyKBgb4PSpKCUFAcz8qosA="
       X-Amz-Request-Id:
-      - 7EA531E7E5ACDB6F
+      - '0485ABE7AC058CED'
       Date:
-      - Sun, 10 Sep 2017 14:14:31 GMT
+      - Wed, 13 Sep 2017 10:19:42 GMT
       Last-Modified:
-      - Sun, 10 Sep 2017 14:14:31 GMT
+      - Wed, 13 Sep 2017 10:19:42 GMT
       Etag:
       - '"7e50cc73c25956420190f7538a69e4c9"'
       Accept-Ranges:
@@ -110,7 +110,7 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sun, 10 Sep 2017 14:14:29 GMT
+  recorded_at: Wed, 13 Sep 2017 10:19:41 GMT
 - request:
     method: get
     uri: https://fde-test-bucket.s3.eu-central-1.amazonaws.com/test_file.txt
@@ -123,16 +123,16 @@ http_interactions:
       Accept-Encoding:
       - ''
       User-Agent:
-      - aws-sdk-ruby3/3.3.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
+      - aws-sdk-ruby3/3.4.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
       Host:
       - fde-test-bucket.s3.eu-central-1.amazonaws.com
       X-Amz-Date:
-      - 20170910T141429Z
+      - 20170913T101941Z
       X-Amz-Content-Sha256:
       - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=AKIAIX3HJK53KEOTMJOQ/20170910/eu-central-1/s3/aws4_request,
-        SignedHeaders=host;user-agent;x-amz-content-sha256;x-amz-date, Signature=d57003b9bba6c634582c902cea9c316fecb735617180648b379305faf0a69289
+      - AWS4-HMAC-SHA256 Credential=AKIAIO3SBV4ZMINCQCRQ/20170913/eu-central-1/s3/aws4_request,
+        SignedHeaders=host;user-agent;x-amz-content-sha256;x-amz-date, Signature=7c4042502eb6bb3fe0c115639d8156059694900aadcfa51c686640cd05fd1fd8
       Content-Length:
       - '0'
       Accept:
@@ -143,13 +143,13 @@ http_interactions:
       message: OK
     headers:
       X-Amz-Id-2:
-      - 2v9QZGVbzfdJX9cOmYQa4GR68ft8uDyPzt0tYGzRCXiB0rWZMPg7ceZJaDMsJqgK1Th2EXZcquE=
+      - qbrCJ+QWbBPyvKu1j6CV+zCa/e+tvoVdekgxyjvAEzQ6CedehDyZlTvfq0bK0mUj7u4kFOyqIjk=
       X-Amz-Request-Id:
-      - D10AB11AFE68E252
+      - 26B0B23212F7A4B9
       Date:
-      - Sun, 10 Sep 2017 14:14:31 GMT
+      - Wed, 13 Sep 2017 10:19:42 GMT
       Last-Modified:
-      - Sun, 10 Sep 2017 14:14:31 GMT
+      - Wed, 13 Sep 2017 10:19:42 GMT
       Etag:
       - '"7e50cc73c25956420190f7538a69e4c9"'
       Accept-Ranges:
@@ -166,5 +166,5 @@ http_interactions:
 
 '
     http_version: 
-  recorded_at: Sun, 10 Sep 2017 14:14:29 GMT
+  recorded_at: Wed, 13 Sep 2017 10:19:41 GMT
 recorded_with: VCR 3.0.3

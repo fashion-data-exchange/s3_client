@@ -14,7 +14,7 @@ http_interactions:
       Accept-Encoding:
       - ''
       User-Agent:
-      - aws-sdk-ruby3/3.3.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
+      - aws-sdk-ruby3/3.4.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
       Expect:
       - 100-continue
       Content-Md5:
@@ -22,13 +22,13 @@ http_interactions:
       Host:
       - fde-test-bucket.s3.eu-central-1.amazonaws.com
       X-Amz-Date:
-      - 20170910T141430Z
+      - 20170913T101934Z
       X-Amz-Content-Sha256:
       - bbea122c8852dd8c4d1a7db94daf2a142870fcd6694e31c1fb44eede61b253ef
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=AKIAIX3HJK53KEOTMJOQ/20170910/eu-central-1/s3/aws4_request,
+      - AWS4-HMAC-SHA256 Credential=AKIAIO3SBV4ZMINCQCRQ/20170913/eu-central-1/s3/aws4_request,
         SignedHeaders=content-md5;expect;host;user-agent;x-amz-content-sha256;x-amz-date,
-        Signature=acf89bb1d2d49d9da06f446334d854a00c811a66e3a90c4b3d92b52bbbf135b2
+        Signature=7db3220d7389b48f083108324400a82872d8926832afadc0b460155a4c104618
       Content-Length:
       - '20'
       Accept:
@@ -39,11 +39,11 @@ http_interactions:
       message: OK
     headers:
       X-Amz-Id-2:
-      - ifwyB94jicvFvPx2TLYNmOZVAXXeNpG2qHw3ftylWW/Fl+LJC5FIRFAm/3ACPr/Qa79Iml2jnAo=
+      - i+xVMPd902dQe1d4sLcG1jMGx9s/gZBCvsYZexjoDFbjO7CqIjGRSqpA6SBJVkvOOUkW42zzO68=
       X-Amz-Request-Id:
-      - BE63D1DC36928129
+      - F7F3090C68100A56
       Date:
-      - Sun, 10 Sep 2017 14:14:32 GMT
+      - Wed, 13 Sep 2017 10:19:35 GMT
       Etag:
       - '"7e50cc73c25956420190f7538a69e4c9"'
       Content-Length:
@@ -54,7 +54,7 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sun, 10 Sep 2017 14:14:31 GMT
+  recorded_at: Wed, 13 Sep 2017 10:19:34 GMT
 - request:
     method: put
     uri: https://fde-test-bucket.s3.eu-central-1.amazonaws.com/done/test_file.txt
@@ -67,19 +67,19 @@ http_interactions:
       Accept-Encoding:
       - ''
       User-Agent:
-      - aws-sdk-ruby3/3.3.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
+      - aws-sdk-ruby3/3.4.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
       X-Amz-Copy-Source:
       - fde-test-bucket/test_file.txt
       Host:
       - fde-test-bucket.s3.eu-central-1.amazonaws.com
       X-Amz-Date:
-      - 20170910T141431Z
+      - 20170913T101934Z
       X-Amz-Content-Sha256:
       - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=AKIAIX3HJK53KEOTMJOQ/20170910/eu-central-1/s3/aws4_request,
+      - AWS4-HMAC-SHA256 Credential=AKIAIO3SBV4ZMINCQCRQ/20170913/eu-central-1/s3/aws4_request,
         SignedHeaders=host;user-agent;x-amz-content-sha256;x-amz-copy-source;x-amz-date,
-        Signature=fc988055529deac117256a41ef9031585618d186b803fc6b72d067fb1690e63b
+        Signature=2babb2f4588bce84c2c3f97e8f640814602dd550b66ba8952fdf7db5468a4572
       Content-Length:
       - '0'
       Accept:
@@ -90,11 +90,11 @@ http_interactions:
       message: OK
     headers:
       X-Amz-Id-2:
-      - 1+4Nq7oMwF9hD8LMEccIL50kE9NBw4RGZb0XV0r93l4TDXcOowBxoCMRn03ajSYIy0syyX6xs/0=
+      - 6h6/sMMOOKx70Fqik2vHrpcoHPxWV12qJ/ztrnnL1OFizYPH49sw3jRYIDXFRS6/4t6JACLM2Xw=
       X-Amz-Request-Id:
-      - C68BEA6D7558B000
+      - 2E2CBBE4BFCCE343
       Date:
-      - Sun, 10 Sep 2017 14:14:32 GMT
+      - Wed, 13 Sep 2017 10:19:36 GMT
       Content-Type:
       - application/xml
       Content-Length:
@@ -105,9 +105,9 @@ http_interactions:
       encoding: UTF-8
       string: |-
         <?xml version="1.0" encoding="UTF-8"?>
-        <CopyObjectResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><LastModified>2017-09-10T14:14:32.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag></CopyObjectResult>
+        <CopyObjectResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><LastModified>2017-09-13T10:19:36.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag></CopyObjectResult>
     http_version: 
-  recorded_at: Sun, 10 Sep 2017 14:14:31 GMT
+  recorded_at: Wed, 13 Sep 2017 10:19:35 GMT
 - request:
     method: delete
     uri: https://fde-test-bucket.s3.eu-central-1.amazonaws.com/test_file.txt
@@ -120,16 +120,16 @@ http_interactions:
       Accept-Encoding:
       - ''
       User-Agent:
-      - aws-sdk-ruby3/3.3.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
+      - aws-sdk-ruby3/3.4.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
       Host:
       - fde-test-bucket.s3.eu-central-1.amazonaws.com
       X-Amz-Date:
-      - 20170910T141431Z
+      - 20170913T101935Z
       X-Amz-Content-Sha256:
       - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=AKIAIX3HJK53KEOTMJOQ/20170910/eu-central-1/s3/aws4_request,
-        SignedHeaders=host;user-agent;x-amz-content-sha256;x-amz-date, Signature=1cedc857e4667f5896dcc66b9baddf66268e7eeabb1ae8f63f5cbd829d061cd1
+      - AWS4-HMAC-SHA256 Credential=AKIAIO3SBV4ZMINCQCRQ/20170913/eu-central-1/s3/aws4_request,
+        SignedHeaders=host;user-agent;x-amz-content-sha256;x-amz-date, Signature=c9c7cd46ea89ce87f56ae2179360e15f104f8b7b0e5a051898da7ad502b40ecf
       Content-Length:
       - '0'
       Accept:
@@ -140,18 +140,18 @@ http_interactions:
       message: No Content
     headers:
       X-Amz-Id-2:
-      - 0gnwBvlC5FM6qcUOEq4/zE3jHerofr5b0YYCtvTcGCA0BTR/6V40Xu3p2CQVC14H1L4Wit1QUFw=
+      - ThVt25KCQeAIwfELHKJQe8paJKv91w9GSG2UDALQNUQVxKSCw+nJgaY1noiS9PqDIov3ITUG6BE=
       X-Amz-Request-Id:
-      - 2A01BE7F0A773488
+      - 2B17AA9B0076487C
       Date:
-      - Sun, 10 Sep 2017 14:14:33 GMT
+      - Wed, 13 Sep 2017 10:19:36 GMT
       Server:
       - AmazonS3
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sun, 10 Sep 2017 14:14:31 GMT
+  recorded_at: Wed, 13 Sep 2017 10:19:35 GMT
 - request:
     method: get
     uri: https://fde-test-bucket.s3.eu-central-1.amazonaws.com/?encoding-type=url
@@ -164,16 +164,16 @@ http_interactions:
       Accept-Encoding:
       - ''
       User-Agent:
-      - aws-sdk-ruby3/3.3.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
+      - aws-sdk-ruby3/3.4.0 ruby/2.4.0 x86_64-darwin16 aws-sdk-s3/1.2.0
       Host:
       - fde-test-bucket.s3.eu-central-1.amazonaws.com
       X-Amz-Date:
-      - 20170910T141431Z
+      - 20170913T101935Z
       X-Amz-Content-Sha256:
       - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=AKIAIX3HJK53KEOTMJOQ/20170910/eu-central-1/s3/aws4_request,
-        SignedHeaders=host;user-agent;x-amz-content-sha256;x-amz-date, Signature=92473a009cee8889f6cd95867f8684de87e6c558082444f7d17b9a0edcb88654
+      - AWS4-HMAC-SHA256 Credential=AKIAIO3SBV4ZMINCQCRQ/20170913/eu-central-1/s3/aws4_request,
+        SignedHeaders=host;user-agent;x-amz-content-sha256;x-amz-date, Signature=6e8c224b07bd600dcfcb50ae511ebebd0371b3367cb2de90324017ae2a5fa3d6
       Content-Length:
       - '0'
       Accept:
@@ -184,11 +184,11 @@ http_interactions:
       message: OK
     headers:
       X-Amz-Id-2:
-      - ZhMZ3AUSCUdw8IeWR+Cj8h0XXNPg1RqOgjWKQwcnrwWMKABQOdPow4Evmv1f4TUtDwqn52eJqkw=
+      - noXbIiWfHGcBj/yrzTGKm9JcqdH2Uuu0UL1QlqQClV2W72fG6yccwShWZ70lwlEf3bkySV4MvOQ=
       X-Amz-Request-Id:
-      - E937CAB766B026E5
+      - EF3E7670A28CA030
       Date:
-      - Sun, 10 Sep 2017 14:14:33 GMT
+      - Wed, 13 Sep 2017 10:19:36 GMT
       X-Amz-Bucket-Region:
       - eu-central-1
       Content-Type:
@@ -201,7 +201,7 @@ http_interactions:
       encoding: UTF-8
       string: |-
         <?xml version="1.0" encoding="UTF-8"?>
-        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>fde-test-bucket</Name><Prefix></Prefix><Marker></Marker><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Contents><Key>done/test_file.txt</Key><LastModified>2017-09-10T14:14:32.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag><Size>20</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>done/test_file.txt/test_file.txt</Key><LastModified>2017-09-10T10:56:16.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag><Size>20</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>folder/new_test_file.txt</Key><LastModified>2017-09-10T14:14:01.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag><Size>20</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>folder/test_file.txt</Key><LastModified>2017-09-10T14:14:01.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag><Size>20</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>new.txt</Key><LastModified>2017-09-10T14:14:03.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag><Size>20</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>new_test_file.txt</Key><LastModified>2017-09-10T14:14:01.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag><Size>20</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents></ListBucketResult>
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>fde-test-bucket</Name><Prefix></Prefix><Marker></Marker><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Contents><Key>done/test_file.txt</Key><LastModified>2017-09-13T10:19:36.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag><Size>20</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>new.txt</Key><LastModified>2017-09-13T10:19:35.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag><Size>20</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>new/.keep.me</Key><LastModified>2017-09-11T10:35:58.000Z</LastModified><ETag>&quot;4eef9840e79eafa72b0dfb0a98277d9f&quot;</ETag><Size>15</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>new/test.edi</Key><LastModified>2017-09-11T10:37:51.000Z</LastModified><ETag>&quot;c2f8ccca84d736eca0dbc01052d3c598&quot;</ETag><Size>9</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>new/test.txt</Key><LastModified>2017-09-11T13:24:26.000Z</LastModified><ETag>&quot;2205e48de5f93c784733ffcca841d2b5&quot;</ETag><Size>5</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents></ListBucketResult>
     http_version: 
-  recorded_at: Sun, 10 Sep 2017 14:14:31 GMT
+  recorded_at: Wed, 13 Sep 2017 10:19:35 GMT
 recorded_with: VCR 3.0.3
