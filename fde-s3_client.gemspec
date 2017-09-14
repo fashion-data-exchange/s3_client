@@ -1,7 +1,7 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "s3_client/version"
+require "fde/s3_client/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "fde-s3_client"

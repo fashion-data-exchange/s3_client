@@ -1,5 +1,5 @@
 require 'aws-sdk-s3'
-require "s3_client/version"
+require "fde/s3_client/version"
 
 module FDE
   module S3Client
