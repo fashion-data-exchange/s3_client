@@ -4,7 +4,7 @@ Dotenv.load('.test.env')
 require 'bundler/setup'
 require 'vcr'
 require 'pry'
-require 's3_client'
+require 'fde/s3_client'
 
 
 RSpec.configure do |config|
