@@ -33,7 +33,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "aws-sdk-s3", "~> 1.2"
   spec.add_runtime_dependency "dotenv", "~> 2.2", ">= 2.2.1"
 
-  spec.add_development_dependency "bundler", "~> 1.15"
+  spec.add_development_dependency "bundler", "~> 2.1"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "rdoc", "~> 5.1", ">= 5.1"
