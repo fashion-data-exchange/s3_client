@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://fde-test-bucket.s3.eu-central-1.amazonaws.com/new_test_file.txt
+    body:
+      encoding: UTF-8
+      string: some edi content
+    headers:
+      Content-Type:
+      - ''
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby3/3.46.0 ruby/2.5.1 x86_64-darwin18 aws-sdk-s3/1.30.1
+      Expect:
+      - 100-continue
+      Content-Md5:
+      - 9WwBI4An9nuqae+YYscijw==
+      Host:
+      - fde-test-bucket.s3.eu-central-1.amazonaws.com
+      X-Amz-Date:
+      - 20200306T151015Z
+      X-Amz-Content-Sha256:
+      - 85f272365e681edb40f8e3d18a1ecb5342f231bdaaf78e00b326cc9105e946fa
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAIR4HMTXZ5DIGH4UA/20200306/eu-central-1/s3/aws4_request,
+        SignedHeaders=content-md5;expect;host;user-agent;x-amz-content-sha256;x-amz-date,
+        Signature=44b1dfbfb4d4f3b86e532918cc074f45f67630b7b8d67fba79556e1d10683d88
+      Content-Length:
+      - '16'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - N5pDbNvdKqK3mRxL+sNsCKsWJcKP6ch2uXZ2TOFIwhtoZTELe0vvAUawkKtvOgJY4ROFUEEk+js=
+      X-Amz-Request-Id:
+      - 869A98ACA7EB6B6F
+      Date:
+      - Fri, 06 Mar 2020 15:10:16 GMT
+      Etag:
+      - '"f56c01238027f67baa69ef9862c7228f"'
+      Content-Length:
+      - '0'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 06 Mar 2020 15:10:15 GMT
+recorded_with: VCR 3.0.3

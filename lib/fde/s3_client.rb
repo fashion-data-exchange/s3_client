@@ -55,13 +55,17 @@ module FDE
       self.s3.bucket(self.config.bucket_name)
     end
 
-    def self.upload(file_path, options = {})
+    def self.upload_file(file_path, options = {})
       if options[:key]
         key = options[:folder].to_s + options[:key]
       else
         key = options[:folder].to_s + File.basename(file_path)
       end
       self.s3.bucket(self.config.bucket_name).object(key).upload_file(file_path)
+    end
+
+    def self.upload_content(key, content)
+      self.s3.bucket(self.config.bucket_name).object(key).put(body: content)
     end
 
     def self.delete(key)

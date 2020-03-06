@@ -1,0 +1,110 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://fde-test-bucket.s3.eu-central-1.amazonaws.com/folder/test_file.txt
+    body:
+      encoding: ASCII-8BIT
+      string: 'This is a Test File
+
+'
+    headers:
+      Content-Type:
+      - ''
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby3/3.46.0 ruby/2.5.1 x86_64-darwin18 aws-sdk-s3/1.30.1
+      Expect:
+      - 100-continue
+      Content-Md5:
+      - flDMc8JZVkIBkPdTimnkyQ==
+      Host:
+      - fde-test-bucket.s3.eu-central-1.amazonaws.com
+      X-Amz-Date:
+      - 20200306T151014Z
+      X-Amz-Content-Sha256:
+      - bbea122c8852dd8c4d1a7db94daf2a142870fcd6694e31c1fb44eede61b253ef
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAIR4HMTXZ5DIGH4UA/20200306/eu-central-1/s3/aws4_request,
+        SignedHeaders=content-md5;expect;host;user-agent;x-amz-content-sha256;x-amz-date,
+        Signature=00ac4012152224bf97e0cc1de037c262f7b29b2049e37d7325d39f82e9d91117
+      Content-Length:
+      - '20'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - XFiWz8pdQiikEGjwm+9WOj00bY3xUYhhI+FflvSu1cQZecp5WZo6IiSRG2eSs6WHx7Dnv9Nq+0o=
+      X-Amz-Request-Id:
+      - 9C399C759900186C
+      Date:
+      - Fri, 06 Mar 2020 15:10:15 GMT
+      Etag:
+      - '"7e50cc73c25956420190f7538a69e4c9"'
+      Content-Length:
+      - '0'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 06 Mar 2020 15:10:15 GMT
+- request:
+    method: get
+    uri: https://fde-test-bucket.s3.eu-central-1.amazonaws.com/?encoding-type=url
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Content-Type:
+      - ''
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby3/3.46.0 ruby/2.5.1 x86_64-darwin18 aws-sdk-s3/1.30.1
+      Host:
+      - fde-test-bucket.s3.eu-central-1.amazonaws.com
+      X-Amz-Date:
+      - 20200306T151015Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAIR4HMTXZ5DIGH4UA/20200306/eu-central-1/s3/aws4_request,
+        SignedHeaders=host;user-agent;x-amz-content-sha256;x-amz-date, Signature=c385d07b5c29f60b017398b57c2a55b95b2fda28a678ed90f368c6852ed5b0a7
+      Content-Length:
+      - '0'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - 8iahRlyyhpETmparGCsKYyYKWeYPZ60foj413WoLVxTtWtq7uM3MMkiB3PJyQuf69CS69gttm2A=
+      X-Amz-Request-Id:
+      - 886828F94ED2CD85
+      Date:
+      - Fri, 06 Mar 2020 15:10:16 GMT
+      X-Amz-Bucket-Region:
+      - eu-central-1
+      Content-Type:
+      - application/xml
+      Transfer-Encoding:
+      - chunked
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>fde-test-bucket</Name><Prefix></Prefix><Marker></Marker><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Contents><Key>.keep</Key><LastModified>2019-09-05T10:15:09.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-04_15-17-19_pricat_6_1580826722.edi</Key><LastModified>2020-02-04T15:17:21.000Z</LastModified><ETag>&quot;8a426782b150f66a025acfee5959af81&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-04_15-23-00_pricat_6_1580826722.edi</Key><LastModified>2020-02-04T15:23:01.000Z</LastModified><ETag>&quot;8a426782b150f66a025acfee5959af81&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-04_15-27-06_pricat_6_1580826722.edi</Key><LastModified>2020-02-04T15:27:07.000Z</LastModified><ETag>&quot;8a426782b150f66a025acfee5959af81&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-04_15-37-41_pricat_6_1580826722.edi</Key><LastModified>2020-02-04T15:37:42.000Z</LastModified><ETag>&quot;8a426782b150f66a025acfee5959af81&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-04_15-47-02_pricat_6_1580826722.edi</Key><LastModified>2020-02-04T15:47:03.000Z</LastModified><ETag>&quot;8a426782b150f66a025acfee5959af81&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-04_15-59-49_pricat_6_1580826722.edi</Key><LastModified>2020-02-04T15:59:50.000Z</LastModified><ETag>&quot;8a426782b150f66a025acfee5959af81&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-05_16-06-15_pricat_6_1580826722.edi</Key><LastModified>2020-02-05T16:06:16.000Z</LastModified><ETag>&quot;8a426782b150f66a025acfee5959af81&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-05_16-50-26_pricat_6_1580826722.edi</Key><LastModified>2020-02-05T16:50:28.000Z</LastModified><ETag>&quot;8a426782b150f66a025acfee5959af81&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-05_16-51-25_pricat_6_1580826722.edi</Key><LastModified>2020-02-05T16:51:26.000Z</LastModified><ETag>&quot;8a426782b150f66a025acfee5959af81&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-06_15-27-43_ordersp_7517_1581002863.edi</Key><LastModified>2020-02-06T15:27:44.000Z</LastModified><ETag>&quot;2c61ed6aa94c253910d09b1541aa0934&quot;</ETag><Size>4344</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-06_15-40-14_ordersp_7517_1581003614.edi</Key><LastModified>2020-02-06T15:40:15.000Z</LastModified><ETag>&quot;0c760d4c1ac0fe4bbcd28e22c958a4c4&quot;</ETag><Size>4344</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-06_15-40-31_desadv_172625_1581003631.edi</Key><LastModified>2020-02-06T15:40:32.000Z</LastModified><ETag>&quot;a9e6b7cd9b0f1b47a1433c6f71afdf30&quot;</ETag><Size>2015</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-07_14-34-58_pricat_6_1580826722.edi</Key><LastModified>2020-02-07T14:34:59.000Z</LastModified><ETag>&quot;8a426782b150f66a025acfee5959af81&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-07_14-36-23_ordersp_7517_1581086183.edi</Key><LastModified>2020-02-07T14:36:24.000Z</LastModified><ETag>&quot;1adc032a713444a497f8179d66f34fd8&quot;</ETag><Size>4344</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-07_14-36-45_desadv_172625_1581086205.edi</Key><LastModified>2020-02-07T14:36:46.000Z</LastModified><ETag>&quot;fc3c33bcb6373bf3b777f665410e9fbe&quot;</ETag><Size>2015</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-07_14-39-37_pricat_6_1580826722.edi</Key><LastModified>2020-02-07T14:39:38.000Z</LastModified><ETag>&quot;8a426782b150f66a025acfee5959af81&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-07_14-40-40_pricat_6_1580826722.edi</Key><LastModified>2020-02-07T14:40:41.000Z</LastModified><ETag>&quot;8a426782b150f66a025acfee5959af81&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-07_14-44-29_pricat_6_1580826722.edi</Key><LastModified>2020-02-07T14:44:30.000Z</LastModified><ETag>&quot;8a426782b150f66a025acfee5959af81&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-07_14-48-21_pricat_6_1580826722.edi</Key><LastModified>2020-02-07T14:48:22.000Z</LastModified><ETag>&quot;8a426782b150f66a025acfee5959af81&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-07_14-57-25_pricat_6_1580826722.edi</Key><LastModified>2020-02-07T14:57:26.000Z</LastModified><ETag>&quot;8a426782b150f66a025acfee5959af81&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-07_14-58-54_ordersp_7517_1581086183.edi</Key><LastModified>2020-02-07T14:58:55.000Z</LastModified><ETag>&quot;1adc032a713444a497f8179d66f34fd8&quot;</ETag><Size>4344</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-07_15-22-02_pricat_6_1580826722.edi</Key><LastModified>2020-02-07T15:22:03.000Z</LastModified><ETag>&quot;8a426782b150f66a025acfee5959af81&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-07_15-25-04_pricat_6_1580826722.edi</Key><LastModified>2020-02-07T15:25:06.000Z</LastModified><ETag>&quot;8a426782b150f66a025acfee5959af81&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-07_15-26-58_pricat_6_1580826722.edi</Key><LastModified>2020-02-07T15:26:59.000Z</LastModified><ETag>&quot;8a426782b150f66a025acfee5959af81&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-07_16-16-56_pricat_6_1580826722.edi</Key><LastModified>2020-02-07T16:16:57.000Z</LastModified><ETag>&quot;8a426782b150f66a025acfee5959af81&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-19_14-55-33_pricat_6_2020-02-19-14-02.edi</Key><LastModified>2020-02-19T14:55:35.000Z</LastModified><ETag>&quot;9a3f7bb5a3e7d902a931e61a39edec8f&quot;</ETag><Size>37554</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-19_15-25-59_pricat_6_2020-02-19-15-02.edi</Key><LastModified>2020-02-19T15:26:00.000Z</LastModified><ETag>&quot;05aaa6a5a2babab41360de836a2d9dbd&quot;</ETag><Size>479083</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-19_15-53-55_pricat_6_2020-02-19-15-02.edi</Key><LastModified>2020-02-19T15:53:57.000Z</LastModified><ETag>&quot;2758beec7d2ea493a0467d3c7cdbb129&quot;</ETag><Size>840094</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-19_15-57-16_ordersp_83189_2020-02-19-15-02.edi</Key><LastModified>2020-02-19T15:57:17.000Z</LastModified><ETag>&quot;4225fd2e402c951dd9f323ab8e8ddb3e&quot;</ETag><Size>609</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-19_15-57-51_desadv_168039_2020-02-19-15-02.edi</Key><LastModified>2020-02-19T15:57:53.000Z</LastModified><ETag>&quot;68fcedb7b0a0bc6fe638fdddfe06152e&quot;</ETag><Size>423</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-20_13-38-58_2020-02-20-12-04.edi</Key><LastModified>2020-02-20T13:38:59.000Z</LastModified><ETag>&quot;f07a834e5b8a8fd4109d97c9228aa377&quot;</ETag><Size>392</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-02-20_15-37-41_2020-02-20-12-04.edi</Key><LastModified>2020-02-20T15:37:43.000Z</LastModified><ETag>&quot;f07a834e5b8a8fd4109d97c9228aa377&quot;</ETag><Size>392</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-03-02_14-20-22_test_slsrpt.edi</Key><LastModified>2020-03-02T14:20:23.000Z</LastModified><ETag>&quot;ecfcb221166940f77e718d9a935db065&quot;</ETag><Size>1693</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-03-02_16-31-36_2020-02-20-12-04.edi</Key><LastModified>2020-03-02T16:31:37.000Z</LastModified><ETag>&quot;f07a834e5b8a8fd4109d97c9228aa377&quot;</ETag><Size>392</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-03-02_16-40-47_2020-02-20-12-04.edi</Key><LastModified>2020-03-02T16:40:48.000Z</LastModified><ETag>&quot;f07a834e5b8a8fd4109d97c9228aa377&quot;</ETag><Size>392</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-03-02_16-50-43_2020-02-20-12-04.edi</Key><LastModified>2020-03-02T16:50:44.000Z</LastModified><ETag>&quot;f07a834e5b8a8fd4109d97c9228aa377&quot;</ETag><Size>392</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-03-02_16-51-44_2020-02-20-12-04.edi</Key><LastModified>2020-03-02T16:51:46.000Z</LastModified><ETag>&quot;f07a834e5b8a8fd4109d97c9228aa377&quot;</ETag><Size>392</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-03-03_09-03-07_test_slsrpt.edi</Key><LastModified>2020-03-03T09:03:08.000Z</LastModified><ETag>&quot;ecfcb221166940f77e718d9a935db065&quot;</ETag><Size>1693</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>2020-03-06_12-20-14_2020-02-20-12-04.edi</Key><LastModified>2020-03-06T12:20:16.000Z</LastModified><ETag>&quot;f07a834e5b8a8fd4109d97c9228aa377&quot;</ETag><Size>392</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>AccountID-6-desadv-2020-02-24-14-02.edi</Key><LastModified>2020-02-24T14:38:53.000Z</LastModified><ETag>&quot;981ea41f62fd31f8d4c82234db77fe59&quot;</ETag><Size>349</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>AccountID-6-desadv-2020-02-26-16-02.edi</Key><LastModified>2020-02-26T16:25:52.000Z</LastModified><ETag>&quot;547f49ac1884e35d7f662b1d2870ba30&quot;</ETag><Size>349</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>AccountID-6-ordersp-2020-02-24-14-02.edi</Key><LastModified>2020-02-24T14:37:17.000Z</LastModified><ETag>&quot;0a394b711e1691867fee9e233269fc26&quot;</ETag><Size>784</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>AccountID-6-ordersp-2020-02-26-16-02.edi</Key><LastModified>2020-02-26T16:25:09.000Z</LastModified><ETag>&quot;fd1bac6b8fdf4084d3329698aff0272a&quot;</ETag><Size>784</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>AccountID-6-pricat-2020-02-24-12-02.edi</Key><LastModified>2020-02-24T12:58:08.000Z</LastModified><ETag>&quot;7f5325c2d56d9e6338d418fe2699eee0&quot;</ETag><Size>500474</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>AccountID-6-pricat-2020-02-24-13-02.edi</Key><LastModified>2020-02-24T13:14:18.000Z</LastModified><ETag>&quot;eb1746b8a05330e7540bb05e4ca00a2f&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>AccountID-6-pricat-2020-02-26-16-02.edi</Key><LastModified>2020-02-26T16:24:40.000Z</LastModified><ETag>&quot;2a52302e8fde68f2bed3eb383a3fed61&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>SLSRPT.txt</Key><LastModified>2020-02-27T14:22:33.000Z</LastModified><ETag>&quot;0689271ca5f88a3f58f94808aaadb465&quot;</ETag><Size>406</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>folder/new_test_file.txt</Key><LastModified>2020-03-06T15:10:15.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag><Size>20</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>folder/test_file.txt</Key><LastModified>2020-03-06T15:10:15.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag><Size>20</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>new_test_file.txt</Key><LastModified>2020-03-06T15:10:15.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag><Size>20</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>ordersp_7809_2020-02-24-08-02.edi</Key><LastModified>2020-02-24T08:46:36.000Z</LastModified><ETag>&quot;13581051e73a2bfd9ac72e7914f14aec&quot;</ETag><Size>2117</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>pricat_6_2020-02-24-08-02.edi</Key><LastModified>2020-02-24T08:46:11.000Z</LastModified><ETag>&quot;ad880bf7211f037d82a039ed9b084e77&quot;</ETag><Size>223977</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>test_file.txt</Key><LastModified>2020-03-06T15:10:15.000Z</LastModified><ETag>&quot;7e50cc73c25956420190f7538a69e4c9&quot;</ETag><Size>20</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>testing.edi</Key><LastModified>2020-02-24T10:52:26.000Z</LastModified><ETag>&quot;907953dcbd01ad68db1f19be286936f4&quot;</ETag><Size>7</Size><Owner><ID>49cf38df14b7a452e299a5eafaaa7753ec2e5e4398aab48a48ed2c0c35f6fe9a</ID></Owner><StorageClass>STANDARD</StorageClass></Contents></ListBucketResult>
+    http_version: 
+  recorded_at: Fri, 06 Mar 2020 15:10:15 GMT
+recorded_with: VCR 3.0.3

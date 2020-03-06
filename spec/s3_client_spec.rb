@@ -111,48 +111,60 @@ RSpec.describe FDE::S3Client do
       subject.config.bucket_name = ENV.fetch("S3_BUCKET_NAME")
     end
 
-    describe 'upload' do
+    describe 'upload_file' do
       let(:new_file_name) { 'new_test_file.txt' }
       let(:folder_name) { 'folder/' }
 
       it 'should upload a file to the bucket' do
         expect {
-          subject.upload(file_path)
+          subject.upload_file(file_path)
         }.to_not raise_error
       end
 
       it 'should upload a file to a folder' do
         expect {
-          subject.upload(file_path, folder: folder_name)
+          subject.upload_file(file_path, folder: folder_name)
         }.to_not raise_error
         expect(subject.list).to include("#{folder_name}#{file_name}")
       end
 
       it 'can set new key' do
         expect {
-          subject.upload(file_path, key: new_file_name)
+          subject.upload_file(file_path, key: new_file_name)
         }.to_not raise_error
         expect(subject.list).to include(new_file_name)
       end
 
       it 'can set new key upload it to folder' do
         expect {
-          subject.upload(file_path, key: new_file_name, folder: folder_name)
+          subject.upload_file(file_path, key: new_file_name, folder: folder_name)
         }.to_not raise_error
-        expect(subject.list).to include("#{folder_name}#{file_name}")
+        expect(subject.list).to include("#{folder_name}#{new_file_name}")
       end
     end
 
+    describe 'upload_content' do
+      let(:new_file_name) { 'new_test_file.txt' }
+      let(:content) { 'some edi content' }
+
+      it 'uploads a file to the bucket' do
+        expect { 
+          subject.upload_content(new_file_name, content)
+        }.to_not raise_error
+      end
+    end
+
+
     describe 'list' do
       it 'should list the all the files in the bucket' do
-        subject.upload(file_path)
+        subject.upload_file(file_path)
         expect(subject.list).to include(file_name)
       end
     end
 
     describe 'delete' do
       before :each do
-        subject.upload(file_path)
+        subject.upload_file(file_path)
       end
 
       it 'should delete a file in the bucket' do
@@ -171,12 +183,12 @@ RSpec.describe FDE::S3Client do
       let(:folder_name) { 'done/' }
 
       before :each do
-        subject.upload(file_path)
+        subject.upload_file(file_path)
       end
 
       it 'should move the a file into a folder' do
         expect {
-          subject.upload(file_path)
+          subject.upload_file(file_path)
           subject.move(file_name, "#{folder_name}#{file_name}")
         }.not_to raise_error
       end
@@ -191,7 +203,7 @@ RSpec.describe FDE::S3Client do
       let(:new_file_name) { 'new.txt' }
 
       before :each do
-        subject.upload(file_path)
+        subject.upload_file(file_path)
       end
 
       it 'renames a file do' do
@@ -205,7 +217,7 @@ RSpec.describe FDE::S3Client do
       let(:path) { './spec/tmp/' }
 
       before :each do
-        subject.upload(file_path)
+        subject.upload_file(file_path)
       end
 
       after :each do
